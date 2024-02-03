@@ -1,0 +1,68 @@
+.support {
+
+    background-image: url("../images/dist/lines.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    &__title {
+        margin-bottom: 30px;
+    }
+}
+
+
+.chat {
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    &-message {
+        padding: 12px;
+        position: relative;
+        background: #fff;
+        border-radius: 8px;
+        border: 1px solid #F2F2F2;
+        font-size: 12px;
+        margin-left: 77px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &__name {
+            color: #6D6E73;
+            margin-bottom: 10px;
+        }
+        &__text {
+            margin-bottom: 0;
+        }
+
+
+        &--owner {
+            border-radius: 0px 8px 8px 8px;
+            background: #D9E7FF;
+            border: none;
+            margin-left: 53px;
+            &:before {
+                content: "";
+                display: block;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background-image: url(../images/dist/logo.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                right: calc(100% + 18px);
+                top: 0;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-top: 11px solid #D9E7FF; 
+                border-left: 11px solid transparent;
+                position: absolute;
+                right: 100%;
+                top: 0;
+            }
+        }
+    }
+}

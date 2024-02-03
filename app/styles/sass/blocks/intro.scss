@@ -1,0 +1,85 @@
+.intro {
+    background: #2E70EF;
+    padding: 200px 0 90px;
+    color: #fff;
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    &__img {
+        position: relative;
+        z-index: 1;
+        &:before {
+            content: "";
+            display: block;
+            width: 241px;
+            height: 219px;
+            border-radius: 100px;
+            background: #FBFDFF;
+            filter: blur(100px);
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(50%, -50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 241px;
+            height: 219px;
+            border-radius: 100px;
+            background: #FBFDFF;
+            filter: blur(100px);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        img {
+            border-radius: 1rem;
+        }
+    }
+
+    @media screen and (max-width: 991px) {
+        &__info, &__form {
+            &:before {
+                content: "";
+                display: block;
+                width: 241px;
+                height: 219px;
+                border-radius: 100px;
+                background: #FBFDFF;
+                filter: blur(100px);
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: translate(50%, -50%);
+                z-index: -1;
+                pointer-events: none;
+            }
+            &:after {
+                content: "";
+                display: block;
+                width: 241px;
+                height: 219px;
+                border-radius: 100px;
+                background: #FBFDFF;
+                filter: blur(100px);
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transform: translate(-50%, 50%);
+                z-index: -1;
+                pointer-events: none;
+            }
+        }
+    }
+
+}

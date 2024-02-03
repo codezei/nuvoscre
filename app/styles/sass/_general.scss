@@ -1,0 +1,242 @@
+// GENERAL PROJECT STYLES
+
+
+img {
+    max-width: 100%;
+}
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+.row>* {
+    margin-top: 24px;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@supports (gap: 24px) {
+    .row {
+        gap: 24px 0;
+    }
+
+    .row>* {
+        margin-top: 0;
+    }
+}
+textarea {
+    resize: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+}
+h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2.5rem;
+}
+h4 {
+    font-size: 2rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.25rem;
+}
+@media screen and (max-width: 1199px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.25rem;
+    }
+    h6 {
+        font-size: 1.125rem;
+    }
+}
+@media screen and (max-width: 991px) {
+
+    h2 {
+        font-size: 2.25rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.25rem;
+    }
+    h5 {
+        font-size: 1.125rem;
+    }
+    h6 {
+        font-size: 1rem;
+    }
+}
+
+.block {
+    padding: 95px 0;
+    @media screen and (max-width: 991px) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 60px 0;
+    }
+    @media screen and (max-width: 575px) {
+        padding: 40px 0;
+    }
+}
+
+.btn {
+    padding: 12px 32px;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.1;
+    transition: all 400ms;
+    outline: none;
+    border: none;
+    &--transparent {
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover {
+            background-color: #fff;
+            color: #2e70ef;
+        }
+    }
+    &--primary {
+        background: #5E9EFF;
+        color: #fff;
+        border: 1px solid #5E9EFF;
+        &:hover {
+            background: #fff;
+            color: #3B82F6;
+            border: 1px solid #3B82F6;
+        }
+    }
+    &--blue {
+        background: #3B82F6;
+        color: #fff;
+        &:hover {
+            background: #fff;
+            color: #3B82F6;
+        }
+    }
+}
+
+.tab {
+    &-navigation {
+        padding: 6px;
+        border: 1px solid #F2F4F7;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 8px;
+        &__category {
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            color: #6D6E73;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 400ms;
+            &.active {
+                background: #2D6CE2;
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+                color: #fff;
+            }
+            &:hover {
+                background: #5E9EFF;
+                color: #fff;
+            }
+        }
+    }
+    &-content {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}
+
+.check {
+    &-list {
+        list-style: none;
+        padding: 0;
+    }
+    &-item {
+        padding-left: 36px;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='24' height='24' rx='12' fill='%23DEEBFF'/%3E%3Cpath d='M17.3337 8L10.0003 15.3333L6.66699 12' stroke='%233B82F6' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+    }
+}
+
+.cart {
+    text-align: center;
+    padding: 1.125rem;
+    border-radius: 8px;
+    transition: all 400ms;
+    height: 100%;
+    &.active {
+        background-color: #fff;
+        box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0.00), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    }
+    &__img {
+        margin-bottom: 1rem;
+    }
+    &__title {
+        margin-bottom: 0.5rem;
+    }
+    &__text {
+        margin-bottom: 0;
+        color: #6D6E73;
+    }
+}

@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+<header class="header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <a href="./index.html" class="logo">
+                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6955_669)">
+                        <path d="M21.4238 9.71439V29.7765H14.2523L4.35549 14.4182V29.7765H0V9.66845L4.10583 5.95306L17.0683 26.0686V11.6963L7.41131 2.96287L10.6874 0L21.4238 9.71439Z" fill="white"/>
+                        <path d="M24.8047 21.3275V10.7202H28.7661V20.8804C28.7661 24.6281 30.2212 26.5015 33.1314 26.5007C34.6473 26.5007 35.8331 25.9485 36.689 24.8442C37.5448 23.7398 37.9731 22.2083 37.9739 20.2496V10.7202H41.9342V29.7765H38.0094V27.3575C36.5915 29.1192 34.6599 30 32.2148 30C30.0119 30 28.2268 29.3175 26.8594 27.9523C25.4921 26.5872 24.8071 24.3789 24.8047 21.3275Z" fill="white"/>
+                        <path d="M43.5859 10.7202H47.8411L53.0128 25.4564L58.1112 10.7202H62.2917L55.3601 29.7765H50.5187L43.5859 10.7202Z" fill="white"/>
+                        <path d="M62.4023 20.2483C62.4023 17.3451 63.2827 14.994 65.0433 13.1951C66.8039 11.3962 69.1145 10.4967 71.9749 10.4967C74.8361 10.4967 77.147 11.3962 78.9077 13.1951C80.6683 14.994 81.5486 17.3451 81.5486 20.2483C81.5486 23.1764 80.6683 25.5337 78.9077 27.3202C77.147 29.1067 74.8361 30 71.9749 30C69.1153 30 66.8047 29.1067 65.0433 27.3202C63.2818 25.5337 62.4015 23.1764 62.4023 20.2483ZM67.9767 24.8081C68.9786 25.9853 70.3113 26.5739 71.9749 26.5739C73.6384 26.5739 74.9793 25.9853 75.9975 24.8081C77.0116 23.6293 77.5191 22.1094 77.5199 20.2483C77.5207 18.3873 77.0132 16.8674 75.9975 15.6886C74.9826 14.5097 73.6437 13.9203 71.981 13.9203C70.3183 13.9203 68.9855 14.5097 67.9829 15.6886C66.9802 16.8674 66.4788 18.3873 66.4788 20.2483C66.4788 22.1094 66.9781 23.6293 67.9767 24.8081Z" fill="white"/>
+                        <path d="M87.3448 23.4857C87.3726 23.9729 87.5092 24.4473 87.7443 24.8731C87.9795 25.2988 88.3069 25.6647 88.702 25.9431C89.5333 26.5632 90.6462 26.8732 92.0405 26.8732C93.2643 26.8732 94.2486 26.6497 94.9935 26.2027C95.7384 25.7556 96.1112 25.148 96.112 24.3797C96.1268 23.9731 96.0383 23.5694 95.855 23.2075C95.6837 22.8971 95.3721 22.6549 94.9201 22.4811C94.5096 22.3203 94.0862 22.1956 93.6547 22.1085C93.263 22.0349 92.6393 21.9484 91.7835 21.849C91.6869 21.8273 91.5886 21.8148 91.4898 21.8118C90.4658 21.6973 89.4492 21.5232 88.445 21.2902C87.6327 21.0915 86.8452 20.7998 86.0977 20.421C85.386 20.079 84.7921 19.5278 84.393 18.839C84.0136 18.1684 83.8239 17.3621 83.8239 16.42C83.8239 14.6327 84.539 13.1934 85.9692 12.1023C87.3994 11.0112 89.2519 10.4777 91.5265 10.5017C93.8737 10.5017 95.7873 11.0352 97.2673 12.1023C98.7473 13.1694 99.548 14.6596 99.6696 16.5727H95.7816C95.7266 16.1367 95.5803 15.7176 95.3526 15.3437C95.1248 14.9697 94.8209 14.6495 94.4611 14.4046C93.7024 13.859 92.7486 13.5863 91.5999 13.5863C90.4267 13.5863 89.4852 13.8094 88.7754 14.2556C88.0656 14.7018 87.7111 15.3098 87.7119 16.0797C87.7031 16.3396 87.7447 16.5986 87.8343 16.8422C87.9322 17.0683 88.0908 17.2619 88.292 17.401C88.4938 17.5512 88.7089 17.6822 88.9345 17.7921C89.2345 17.9183 89.5491 18.0055 89.8707 18.0517C90.2855 18.1274 90.6404 18.1758 90.9342 18.2193L92.2179 18.387C93.197 18.5128 94.0222 18.6432 94.6937 18.7781C95.4052 18.9264 96.1042 19.1315 96.7839 19.3915C97.4133 19.6137 97.9976 19.9504 98.5082 20.385C98.9622 20.8069 99.3244 21.3204 99.5717 21.8925C99.8646 22.5724 100.009 23.3088 99.9939 24.0507C99.9939 25.838 99.2482 27.2772 97.7568 28.3683C96.2654 29.4594 94.3579 30.0054 92.0344 30.0062C89.4897 30.0062 87.4353 29.4292 85.8713 28.2752C84.3073 27.1212 83.5045 25.5247 83.4629 23.4857H87.3448Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_6955_669">
+                        <rect width="100" height="30" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+            </div>
+            <div class="col-auto">
+                <a href="./contacts.html" class="btn btn--transparent">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+	<section class="intro">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 col-xxl-5 intro__info" data-aos="fade-up">
+                <h1 class="intro__title">
+                    Elevate Your Valuation and Deal Management
+                </h1>
+                <h6 class="intro__subtitle">
+                    Our advanced, AI-enhanced CRE platform empowers investors to underwrite and manage deals more efficiently and intelligently
+                </h6>
+                <a href="" class="btn btn--primary">
+                    Learn More
+                </a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="400">
+                <div class="intro__img">
+                    <img src="./images/dist/intro-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="features block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="cart">
+                    <div class="cart__img">
+                        <img src="./images/dist/feature-img-1.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        Institutional Underwriting
+                    </h6>
+                    <p class="cart__text">
+                        Quickly and accurately model developments and acquisitions across property types
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="cart active">
+                    <div class="cart__img">
+                        <img src="./images/dist/feature-img-2.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        Data-Driven Deal Management
+                    </h6>
+                    <p class="cart__text">
+                        Manage and track deals throughout their lifecycle on a centralized platform
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+                <div class="cart">
+                    <div class="cart__img">
+                        <img src="./images/dist/feature-img-3.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        Premium Support & Training
+                    </h6>
+                    <p class="cart__text">
+                        Receive immediate support for technical issues and access educational resources
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="services block">
+    <div class="container">
+        <div class="services__navigation">
+            <div class="tab-navigation">
+                <div class="tab-navigation__category active" data-category="valuation">Valuation </div>
+                <div class="tab-navigation__category" data-category="management">Deal Management </div>
+            </div>
+        </div>
+        <div class="tab-list">
+            <div class="tab-content service active" data-category="valuation">
+                <h4 class="service__title">
+                    Valuation
+                </h4>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="service-list">
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20 20V13M12 20V10M4 20L4 16M13.4067 5.0275L18.5751 6.96567M10.7988 5.40092L5.20023 9.59983M21.0607 6.43934C21.6464 7.02513 21.6464 7.97487 21.0607 8.56066C20.4749 9.14645 19.5251 9.14645 18.9393 8.56066C18.3536 7.97487 18.3536 7.02513 18.9393 6.43934C19.5251 5.85355 20.4749 5.85355 21.0607 6.43934ZM5.06066 9.43934C5.64645 10.0251 5.64645 10.9749 5.06066 11.5607C4.47487 12.1464 3.52513 12.1464 2.93934 11.5607C2.35355 10.9749 2.35355 10.0251 2.93934 9.43934C3.52513 8.85355 4.47487 8.85355 5.06066 9.43934ZM13.0607 3.43934C13.6464 4.02513 13.6464 4.97487 13.0607 5.56066C12.4749 6.14645 11.5251 6.14645 10.9393 5.56066C10.3536 4.97487 10.3536 4.02513 10.9393 3.43934C11.5251 2.85355 12.4749 2.85355 13.0607 3.43934Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Model Scenarios with Diverse Levels of Complexity
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Dynamically underwrite different lease structures, seamlessly incorporate varying debt levels, and expertly structure joint venture arrangements
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 10H22V8.2C22 7.0799 22 6.51984 21.782 6.09202C21.5903 5.7157 21.2843 5.40974 20.908 5.21799C20.4802 5 19.9201 5 18.8 5H5.2C4.0799 5 3.51984 5 3.09202 5.21799C2.7157 5.40973 2.40973 5.71569 2.21799 6.09202C2 6.51984 2 7.0799 2 8.2V15.8C2 16.9201 2 17.4802 2.21799 17.908C2.40973 18.2843 2.71569 18.5903 3.09202 18.782C3.51984 19 4.0799 19 5.2 19H11M14.5 21L16.525 20.595C16.7015 20.5597 16.7898 20.542 16.8721 20.5097C16.9452 20.4811 17.0147 20.4439 17.079 20.399C17.1516 20.3484 17.2152 20.2848 17.3426 20.1574L21.5 16C22.0523 15.4477 22.0523 14.5523 21.5 14C20.9477 13.4477 20.0523 13.4477 19.5 14L15.3426 18.1574C15.2152 18.2848 15.1516 18.3484 15.101 18.421C15.0561 18.4853 15.0189 18.5548 14.9903 18.6279C14.958 18.7102 14.9403 18.7985 14.905 18.975L14.5 21Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Generate Cash Flow and Valuation Reports
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Produce comprehensive cash flow forecasts and detailed valuation reports, empowering you to make informed investment decisions
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16 7C16 6.07003 16 5.60504 15.8978 5.22354C15.6204 4.18827 14.8117 3.37962 13.7765 3.10222C13.395 3 12.93 3 12 3C11.07 3 10.605 3 10.2235 3.10222C9.18827 3.37962 8.37962 4.18827 8.10222 5.22354C8 5.60504 8 6.07003 8 7M5.2 21H18.8C19.9201 21 20.4802 21 20.908 20.782C21.2843 20.5903 21.5903 20.2843 21.782 19.908C22 19.4802 22 18.9201 22 17.8V10.2C22 9.07989 22 8.51984 21.782 8.09202C21.5903 7.71569 21.2843 7.40973 20.908 7.21799C20.4802 7 19.9201 7 18.8 7H5.2C4.07989 7 3.51984 7 3.09202 7.21799C2.71569 7.40973 2.40973 7.71569 2.21799 8.09202C2 8.51984 2 9.07989 2 10.2V17.8C2 18.9201 2 19.4802 2.21799 19.908C2.40973 20.2843 2.71569 20.5903 3.09202 20.782C3.51984 21 4.0799 21 5.2 21Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Access Market Data and Perform Portfolio Analyses 
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Obtain real-time market data and conduct in-depth portfolio analyses, streamlining the underwriting process for faster, more insightful evaluations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                        <div class="service__img">
+                            <img src="./images/dist/service-img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content service" data-category="management">
+                <h4 class="service__title">
+                    Deal Management
+                </h4>
+                <div class="row">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <div class="service-list">
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7058_2747)">
+                                        <path d="M13.5 17H5.5C5.23478 17 4.98043 16.8946 4.79289 16.7071C4.60536 16.5196 4.5 16.2652 4.5 16V4C4.5 3.73478 4.60536 3.48043 4.79289 3.29289C4.98043 3.10536 5.23478 3 5.5 3H21.5C21.7652 3 22.0196 3.10536 22.2071 3.29289C22.3946 3.48043 22.5 3.73478 22.5 4V12" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.5 13H17.5" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.5 21H13.5" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.5 17L11 21" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.5 19C18.5 19.5304 18.7107 20.0391 19.0858 20.4142C19.4609 20.7893 19.9696 21 20.5 21C21.0304 21 21.5391 20.7893 21.9142 20.4142C22.2893 20.0391 22.5 19.5304 22.5 19C22.5 18.4696 22.2893 17.9609 21.9142 17.5858C21.5391 17.2107 21.0304 17 20.5 17C19.9696 17 19.4609 17.2107 19.0858 17.5858C18.7107 17.9609 18.5 18.4696 18.5 19Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.5 15.5V17" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M20.5 21V22.5" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M23.5334 17.25L22.2344 18" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7688 20L17.4688 20.75" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17.4688 17.25L18.7688 18" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M22.2344 20L23.5344 20.75" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_7058_2747">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Work on a Central, Configurable Platform
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Manage deals, customize pipelines, generate reports, delegate tasks, and collaborate with your team – all within a unified platform
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.5 21L6.5 15M6.5 15C7.60457 15 8.5 14.1046 8.5 13C8.5 11.8954 7.60457 11 6.5 11C5.39543 11 4.5 11.8954 4.5 13C4.5 14.1046 5.39543 15 6.5 15ZM6.5 7V3M13.5 21V15M13.5 7V3M13.5 7C12.3954 7 11.5 7.89543 11.5 9C11.5 10.1046 12.3954 11 13.5 11C14.6046 11 15.5 10.1046 15.5 9C15.5 7.89543 14.6046 7 13.5 7ZM20.5 21V17M20.5 17C21.6046 17 22.5 16.1046 22.5 15C22.5 13.8954 21.6046 13 20.5 13C19.3954 13 18.5 13.8954 18.5 15C18.5 16.1046 19.3954 17 20.5 17ZM20.5 9V3" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Automate Processes through Seamless Integration
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Reduce manual data entry by integrating your deal management and valuation software, thereby ensuring your pipeline remains both accurate and current
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="service-item__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_7058_2741)">
+                                        <path d="M5.5 18V17.8C5.5 16.1198 5.5 15.2798 5.82698 14.638C6.1146 14.0735 6.57354 13.6146 7.13803 13.327C7.77976 13 8.61984 13 10.3 13H16.7C18.3802 13 19.2202 13 19.862 13.327C20.4265 13.6146 20.8854 14.0735 21.173 14.638C21.5 15.2798 21.5 16.1198 21.5 17.8V18M5.5 18C4.39543 18 3.5 18.8954 3.5 20C3.5 21.1046 4.39543 22 5.5 22C6.60457 22 7.5 21.1046 7.5 20C7.5 18.8954 6.60457 18 5.5 18ZM21.5 18C20.3954 18 19.5 18.8954 19.5 20C19.5 21.1046 20.3954 22 21.5 22C22.6046 22 23.5 21.1046 23.5 20C23.5 18.8954 22.6046 18 21.5 18ZM13.5 18C12.3954 18 11.5 18.8954 11.5 20C11.5 21.1046 12.3954 22 13.5 22C14.6046 22 15.5 21.1046 15.5 20C15.5 18.8954 14.6046 18 13.5 18ZM13.5 18V8M7.5 8H19.5C20.4319 8 20.8978 8 21.2654 7.84776C21.7554 7.64477 22.1448 7.25542 22.3478 6.76537C22.5 6.39782 22.5 5.93188 22.5 5C22.5 4.06812 22.5 3.60218 22.3478 3.23463C22.1448 2.74458 21.7554 2.35523 21.2654 2.15224C20.8978 2 20.4319 2 19.5 2H7.5C6.56812 2 6.10218 2 5.73463 2.15224C5.24458 2.35523 4.85523 2.74458 4.65224 3.23463C4.5 3.60218 4.5 4.06812 4.5 5C4.5 5.93188 4.5 6.39782 4.65224 6.76537C4.85523 7.25542 5.24458 7.64477 5.73463 7.84776C6.10218 8 6.56812 8 7.5 8Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_7058_2741">
+                                        <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                        </defs>
+                                        </svg>
+                                        
+                                </div>
+                                <div class="service-item__content">
+                                    <h6 class="service-item__title">
+                                        Leverage Cutting-Edge Technology
+                                    </h6>
+                                    <p class="service-item__text">
+                                        Utilizing advanced AWS cloud technology and AI/ML capabilities, our platform ensures swift, secure data access and enables you to extract actionable insights from your data
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
+                        <div class="service__img">
+                            <img src="./images/dist/service-img-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="advantages block">
+    <div class="container">
+        <h2 class="advantages__title">
+            Our Advantage
+        </h2>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="0">
+                <div class="cart">
+                    <div class="cart__img">
+                        <img src="./images/dist/advantage-img-1.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        Comprehensive
+                    </h6>
+                    <p class="cart__text">
+                        Underwrite deals of varying complexity with greater speed and accuracy
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="cart active">
+                    <div class="cart__img">
+                        <img src="./images/dist/advantage-img-2.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        Fully Integrated
+                    </h6>
+                    <p class="cart__text">
+                        Automated flow of info from model to pipeline reduces manual data entry
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+                <div class="cart">
+                    <div class="cart__img">
+                        <img src="./images/dist/advantage-img-3.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        By CRE for CRE
+                    </h6>
+                    <p class="cart__text">
+                        Directly addresses the needs of CRE professionals using an intuitive interface
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-delay="1200">
+                <div class="cart">
+                    <div class="cart__img">
+                        <img src="./images/dist/advantage-img-4.png" alt="">
+                    </div>
+                    <h6 class="cart__title">
+                        AI/ML Powered
+                    </h6>
+                    <p class="cart__text">
+                        Leverages AI/ML to generate BI reports based on unique company data
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	<section class="information block">
+    <div class="container">
+        <div class="information__navigation">
+            <div class="tab-navigation">
+                <button class="tab-navigation__category active" data-category="pricing">Pricing</button>
+                <button class="tab-navigation__category" data-category="faqs">FAQs</button>
+                <button class="tab-navigation__category" data-category="support">Support</button>
+            </div>
+        </div>
+        <div class="tab-list">
+            <div class="pricing active tab-content" data-category="pricing">
+    <h2 class="pricing__title" data-aos="fade-right">Pricing</h2>
+    <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="pricing-cart">
+                <div class="pricing-cart__header">
+                    <h5 class="pricing-cart__title">
+                        Standard
+                    </h5>
+                </div>
+                <div class="pricing-cart__content">
+                    <p class="pricing-cart__subtitle">
+                        Features Include
+                    </p>
+                    <ul class="pricing-cart__list check-list">
+                        <li class="check-item pricing-cart__item">
+                            Valuation and Forecasting Platform
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            Detailed User Guides
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            Responsive Technical Support
+                        </li>
+                    </ul>
+                    <a href="" class="pricing-cart__btn btn">
+                        Contact For Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="pricing-cart active">
+                <div class="pricing-cart__header">
+                    <h5 class="pricing-cart__title">
+                        Professional
+                    </h5>
+                    <div class="pricing-cart__tag">
+                        Popular
+                    </div>
+                </div>
+                <div class="pricing-cart__content">
+                    <p class="pricing-cart__subtitle">
+                        Everything in Standard +
+                    </p>
+                    <ul class="pricing-cart__list check-list">
+                        <li class="check-item pricing-cart__item">
+                            Deal Management Platform
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            Hours of Video Trainings
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            Dedicated Account Manager
+                        </li>
+                    </ul>
+                    <a href="" class="pricing-cart__btn btn">
+                        Contact For Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="800">
+            <div class="pricing-cart">
+                <div class="pricing-cart__header">
+                    <h5 class="pricing-cart__title">
+                        Enterprise
+                    </h5>
+                </div>
+                <div class="pricing-cart__content">
+                    <p class="pricing-cart__subtitle">
+                        Everything in Professional +
+                    </p>
+                    <ul class="pricing-cart__list check-list">
+                        <li class="check-item pricing-cart__item">
+                            Migration Assistance
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            In-Person Training Bootcamp
+                        </li>
+                        <li class="check-item pricing-cart__item">
+                            Priority Support
+                        </li>
+                    </ul>
+                    <a href="" class="pricing-cart__btn btn">
+                        Contact For Pricing
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="faq tab-content" data-category="faqs">
+
+        <h2 class="faq__title">
+            FAQs
+        </h2>
+
+        <div class="faq__list">
+            <div class="faq__item">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        Who are our founders?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolores inventore velit amet quae porro ipsa iure consequatur vel, optio totam voluptatem deserunt harum quam distinctio doloremque nihil accusamus suscipit.
+                </div>
+            </div>
+            <div class="faq__item active">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        What's our mission?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    To enhance the CRE deal process with cutting-edge technology
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        How can I keep in contact?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolores inventore velit amet quae porro ipsa iure consequatur vel, optio totam voluptatem deserunt harum quam distinctio doloremque nihil accusamus suscipit.
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        Have we launched?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolores inventore velit amet quae porro ipsa iure consequatur vel, optio totam voluptatem deserunt harum quam distinctio doloremque nihil accusamus suscipit.
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        Can you join our Beta program?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolores inventore velit amet quae porro ipsa iure consequatur vel, optio totam voluptatem deserunt harum quam distinctio doloremque nihil accusamus suscipit.
+                </div>
+            </div>
+            <div class="faq__item">
+                <div class="faq__item-header">
+                    <h5 class="faq__item-title">
+                        Will you become a better investor?
+                    </h5>
+                </div>
+                <div class="faq__item-content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolores inventore velit amet quae porro ipsa iure consequatur vel, optio totam voluptatem deserunt harum quam distinctio doloremque nihil accusamus suscipit.
+                </div>
+            </div>
+        </div>
+
+</div>
+            <div class="support tab-content" data-category="support">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2 class="support__title">
+                Support
+            </h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-item__icon">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18.5L18 20.5L22 16.5M12 15.5H8C6.13623 15.5 5.20435 15.5 4.46927 15.8045C3.48915 16.2105 2.71046 16.9892 2.30448 17.9693C2 18.7044 2 19.6362 2 21.5M15.5 3.79076C16.9659 4.38415 18 5.82131 18 7.5C18 9.17869 16.9659 10.6159 15.5 11.2092M13.5 7.5C13.5 9.70914 11.7091 11.5 9.5 11.5C7.29086 11.5 5.5 9.70914 5.5 7.5C5.5 5.29086 7.29086 3.5 9.5 3.5C11.7091 3.5 13.5 5.29086 13.5 7.5Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="service-item__content">
+                        <h6 class="service-item__title">
+                            Connect with our Expert Technical Team
+                        </h6>
+                        <p class="service-item__text">
+                            Access on-demand support for your company, connecting you with a skilled team of real estate and tech professionals
+                        </p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__icon">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_6989_1669)">
+                            <path d="M6.657 16.5C4.085 16.5 2 14.493 2 12.017C2 9.542 4.085 7.535 6.657 7.535C7.05 5.773 8.451 4.335 10.332 3.762C12.212 3.19 14.288 3.569 15.776 4.762C17.264 5.952 17.938 7.769 17.546 9.531H18.536C20.449 9.531 22 11.091 22 13.017C22 14.944 20.449 16.504 18.535 16.504H6.657" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 16.5V21.5" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 16.5V20.5C16 20.7652 16.1054 21.0196 16.2929 21.2071C16.4804 21.3946 16.7348 21.5 17 21.5H21" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 16.5V20.5C8 20.7652 7.89464 21.0196 7.70711 21.2071C7.51957 21.3946 7.26522 21.5 7 21.5H3" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_6989_1669">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                    </div>
+                    <div class="service-item__content">
+                        <h6 class="service-item__title">
+                            Engage with our Al Chatbot Assistant
+                                
+                        </h6>
+                        <p class="service-item__text">
+                            Get instant help at your fingertips from our Al-powered assistant, facilitating a deeper understanding and smooth navigation of our valuation software
+                        </p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-item__icon">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.5 22.5H14.5M10 10.5H14M12 10.5L12 16.5M15 15.8264C17.3649 14.7029 19 12.2924 19 9.5C19 5.63401 15.866 2.5 12 2.5C8.13401 2.5 5 5.63401 5 9.5C5 12.2924 6.63505 14.7029 9 15.8264V16.5C9 17.4319 9 17.8978 9.15224 18.2654C9.35523 18.7554 9.74458 19.1448 10.2346 19.3478C10.6022 19.5 11.0681 19.5 12 19.5C12.9319 19.5 13.3978 19.5 13.7654 19.3478C14.2554 19.1448 14.6448 18.7554 14.8478 18.2654C15 17.8978 15 17.4319 15 16.5V15.8264Z" stroke="#3B82F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </div>
+                    <div class="service-item__content">
+                        <h6 class="service-item__title">
+                            Expand Your Real Estate Knowledge
+                        </h6>
+                        <p class="service-item__text">
+                            Enhance your proficiency in real estate with our comprehensive user guide and hours of engaging training materials, covering both fundamentals and advanced topics
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="chat">
+                <div class="chat-message">
+                    <div class="chat-message__content">
+                        <p class="chat-message__name">
+                            Chat
+                        </p>
+                        <p class="chat-message__text">
+                            Hello! I have a problem using your chatbot. We recently started implementing your support system, but something is not working. How can this situation be resolved?
+                        </p>
+                    </div>
+                </div>
+                <div class="chat-message chat-message--owner">
+                    <div class="chat-message__content">
+                        <p class="chat-message__name">
+                            Chat
+                        </p>
+                        <p class="chat-message__text">
+                            We greet you! Thank you for your contact. We apologize for the difficulties encountered. To resolve problems with the chat below, please provide more detailed information about the problem you are experiencing. We are ready to help you!
+                        </p>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <div class="chat-message__content">
+                        <p class="chat-message__name">
+                            Chat
+                        </p>
+                        <p class="chat-message__text">
+                            Good afternoon I tried to follow your tutorials, but I was having difficulty with some of the topics. Could you provide additional materials or tips?
+                        </p>
+                    </div>
+                </div>
+                <div class="chat-message chat-message--owner">
+                    <div class="chat-message__content">
+                        <p class="chat-message__name">
+                            Chat
+                        </p>
+                        <p class="chat-message__text">
+                            Good afternoon Thank you for your inquiry. We are ready to provide you with additional training materials. Please clarify which specific topics you are having difficulty with so that we can offer the best support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="join">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="join__subtitle">
+                            What are you waiting for?
+                        </p>
+                        <h4 class="join__title">
+                            Join the waitlist today
+                        </h4>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn--blue join__btn">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="./index.html" class="logo">
+                        <svg width="100" height="31" viewBox="0 0 100 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7017_646)">
+                            <path d="M21.4238 10.0382V30.769H14.2523L4.35549 14.8988V30.769H0V9.99073L4.10583 6.1515L17.0683 26.9375V12.0861L7.4113 3.06163L10.6874 0L21.4238 10.0382Z" fill="#2E70EF"/>
+                            <path d="M24.8047 22.0384V11.0776H28.7661V21.5765C28.7661 25.4491 30.2212 27.385 33.1314 27.3841C34.6473 27.3841 35.8331 26.8135 36.689 25.6724C37.5448 24.5312 37.9731 22.9486 37.9739 20.9247V11.0776H41.9342V30.7691H38.0094V28.2695C36.5915 30.0899 34.6599 31.0001 32.2148 31.0001C30.0119 31.0001 28.2268 30.2948 26.8594 28.8841C25.4921 27.4735 24.8071 25.1916 24.8047 22.0384Z" fill="white"/>
+                            <path d="M43.5859 11.0776H47.8411L53.0128 26.305L58.1112 11.0776H62.2917L55.3601 30.7691H50.5187L43.5859 11.0776Z" fill="white"/>
+                            <path d="M62.4023 20.9234C62.4023 17.9233 63.2827 15.4939 65.0433 13.635C66.8039 11.7761 69.1145 10.8467 71.9749 10.8467C74.8361 10.8467 77.147 11.7761 78.9077 13.635C80.6683 15.4939 81.5486 17.9233 81.5486 20.9234C81.5486 23.9491 80.6683 26.385 78.9077 28.231C77.147 30.0771 74.8361 31.0001 71.9749 31.0001C69.1153 31.0001 66.8047 30.0771 65.0433 28.231C63.2818 26.385 62.4015 23.9491 62.4023 20.9234ZM67.9767 25.6352C68.9786 26.8516 70.3113 27.4598 71.9749 27.4598C73.6384 27.4598 74.9793 26.8516 75.9975 25.6352C77.0116 24.417 77.5191 22.8464 77.5199 20.9234C77.5207 19.0003 77.0132 17.4297 75.9975 16.2116C74.9826 14.9934 73.6437 14.3844 71.981 14.3844C70.3183 14.3844 68.9855 14.9934 67.9829 16.2116C66.9802 17.4297 66.4788 19.0003 66.4788 20.9234C66.4788 22.8464 66.9781 24.417 67.9767 25.6352Z" fill="white"/>
+                            <path d="M87.3448 24.2684C87.3726 24.7719 87.5092 25.2621 87.7443 25.7021C87.9795 26.142 88.3069 26.5201 88.702 26.8078C89.5333 27.4485 90.6462 27.7689 92.0405 27.7689C93.2643 27.7689 94.2486 27.5379 94.9935 27.076C95.7384 26.614 96.1112 25.9861 96.112 25.1923C96.1268 24.7721 96.0383 24.355 95.855 23.981C95.6837 23.6602 95.3721 23.41 94.9201 23.2303C94.5096 23.0642 94.0862 22.9354 93.6547 22.8454C93.263 22.7692 92.6393 22.6799 91.7835 22.5772C91.6869 22.5548 91.5886 22.5419 91.4898 22.5387C90.4658 22.4204 89.4492 22.2405 88.445 21.9998C87.6327 21.7944 86.8452 21.4931 86.0977 21.1016C85.386 20.7482 84.7921 20.1786 84.393 19.4668C84.0136 18.7739 83.8239 17.9407 83.8239 16.9672C83.8239 15.1203 84.539 13.6331 85.9692 12.5056C87.3994 11.3782 89.2519 10.8268 91.5265 10.8516C93.8737 10.8516 95.7873 11.403 97.2673 12.5056C98.7473 13.6083 99.548 15.1481 99.6696 17.125H95.7816C95.7266 16.6745 95.5803 16.2414 95.3526 15.855C95.1248 15.4686 94.8209 15.1377 94.4611 14.8846C93.7024 14.3209 92.7486 14.039 91.5999 14.039C90.4267 14.039 89.4852 14.2696 88.7754 14.7306C88.0656 15.1917 87.7111 15.82 87.7119 16.6156C87.7031 16.8841 87.7447 17.1518 87.8343 17.4035C87.9322 17.6371 88.0908 17.8372 88.292 17.9809C88.4938 18.1361 88.7089 18.2714 88.9345 18.3851C89.2345 18.5155 89.5491 18.6056 89.8707 18.6533C90.2855 18.7316 90.6404 18.7816 90.9342 18.8265L92.2179 18.9997C93.197 19.1298 94.0222 19.2645 94.6937 19.4039C95.4052 19.5572 96.1042 19.7691 96.7839 20.0378C97.4133 20.2674 97.9976 20.6153 98.5082 21.0643C98.9622 21.5004 99.3244 22.0309 99.5717 22.6221C99.8646 23.3247 100.009 24.0856 99.9939 24.8523C99.9939 26.6992 99.2482 28.1863 97.7568 29.3138C96.2654 30.4413 94.3579 31.0055 92.0344 31.0063C89.4897 31.0063 87.4353 30.4101 85.8713 29.2176C84.3073 28.0251 83.5045 26.3754 83.4629 24.2684H87.3448Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7017_646">
+                            <rect width="100" height="31" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                            
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="contacts">
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Grant Uberstine
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                grant@nuvoscre.com
+                            </a>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Jeremy Serapio
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                jeremy@nuvoscre.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
