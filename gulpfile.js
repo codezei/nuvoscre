@@ -96,7 +96,7 @@ function styles() {
 function images() {
 	return src(['app/images/src/**/*'])
 		.pipe(changed('app/images/dist'))
-		.pipe(imagemin())
+		// .pipe(imagemin())
 		.pipe(dest('app/images/dist'))
 		.pipe(browserSync.stream())
 }
