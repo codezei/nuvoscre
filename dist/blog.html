@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+<div class="header-transparent">
+	<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="./index.html">
+                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6955_669)">
+                        <path d="M21.4238 9.71439V29.7765H14.2523L4.35549 14.4182V29.7765H0V9.66845L4.10583 5.95306L17.0683 26.0686V11.6963L7.41131 2.96287L10.6874 0L21.4238 9.71439Z" fill="white"/>
+                        <path d="M24.8047 21.3275V10.7202H28.7661V20.8804C28.7661 24.6281 30.2212 26.5015 33.1314 26.5007C34.6473 26.5007 35.8331 25.9485 36.689 24.8442C37.5448 23.7398 37.9731 22.2083 37.9739 20.2496V10.7202H41.9342V29.7765H38.0094V27.3575C36.5915 29.1192 34.6599 30 32.2148 30C30.0119 30 28.2268 29.3175 26.8594 27.9523C25.4921 26.5872 24.8071 24.3789 24.8047 21.3275Z" fill="white"/>
+                        <path d="M43.5859 10.7202H47.8411L53.0128 25.4564L58.1112 10.7202H62.2917L55.3601 29.7765H50.5187L43.5859 10.7202Z" fill="white"/>
+                        <path d="M62.4023 20.2483C62.4023 17.3451 63.2827 14.994 65.0433 13.1951C66.8039 11.3962 69.1145 10.4967 71.9749 10.4967C74.8361 10.4967 77.147 11.3962 78.9077 13.1951C80.6683 14.994 81.5486 17.3451 81.5486 20.2483C81.5486 23.1764 80.6683 25.5337 78.9077 27.3202C77.147 29.1067 74.8361 30 71.9749 30C69.1153 30 66.8047 29.1067 65.0433 27.3202C63.2818 25.5337 62.4015 23.1764 62.4023 20.2483ZM67.9767 24.8081C68.9786 25.9853 70.3113 26.5739 71.9749 26.5739C73.6384 26.5739 74.9793 25.9853 75.9975 24.8081C77.0116 23.6293 77.5191 22.1094 77.5199 20.2483C77.5207 18.3873 77.0132 16.8674 75.9975 15.6886C74.9826 14.5097 73.6437 13.9203 71.981 13.9203C70.3183 13.9203 68.9855 14.5097 67.9829 15.6886C66.9802 16.8674 66.4788 18.3873 66.4788 20.2483C66.4788 22.1094 66.9781 23.6293 67.9767 24.8081Z" fill="white"/>
+                        <path d="M87.3448 23.4857C87.3726 23.9729 87.5092 24.4473 87.7443 24.8731C87.9795 25.2988 88.3069 25.6647 88.702 25.9431C89.5333 26.5632 90.6462 26.8732 92.0405 26.8732C93.2643 26.8732 94.2486 26.6497 94.9935 26.2027C95.7384 25.7556 96.1112 25.148 96.112 24.3797C96.1268 23.9731 96.0383 23.5694 95.855 23.2075C95.6837 22.8971 95.3721 22.6549 94.9201 22.4811C94.5096 22.3203 94.0862 22.1956 93.6547 22.1085C93.263 22.0349 92.6393 21.9484 91.7835 21.849C91.6869 21.8273 91.5886 21.8148 91.4898 21.8118C90.4658 21.6973 89.4492 21.5232 88.445 21.2902C87.6327 21.0915 86.8452 20.7998 86.0977 20.421C85.386 20.079 84.7921 19.5278 84.393 18.839C84.0136 18.1684 83.8239 17.3621 83.8239 16.42C83.8239 14.6327 84.539 13.1934 85.9692 12.1023C87.3994 11.0112 89.2519 10.4777 91.5265 10.5017C93.8737 10.5017 95.7873 11.0352 97.2673 12.1023C98.7473 13.1694 99.548 14.6596 99.6696 16.5727H95.7816C95.7266 16.1367 95.5803 15.7176 95.3526 15.3437C95.1248 14.9697 94.8209 14.6495 94.4611 14.4046C93.7024 13.859 92.7486 13.5863 91.5999 13.5863C90.4267 13.5863 89.4852 13.8094 88.7754 14.2556C88.0656 14.7018 87.7111 15.3098 87.7119 16.0797C87.7031 16.3396 87.7447 16.5986 87.8343 16.8422C87.9322 17.0683 88.0908 17.2619 88.292 17.401C88.4938 17.5512 88.7089 17.6822 88.9345 17.7921C89.2345 17.9183 89.5491 18.0055 89.8707 18.0517C90.2855 18.1274 90.6404 18.1758 90.9342 18.2193L92.2179 18.387C93.197 18.5128 94.0222 18.6432 94.6937 18.7781C95.4052 18.9264 96.1042 19.1315 96.7839 19.3915C97.4133 19.6137 97.9976 19.9504 98.5082 20.385C98.9622 20.8069 99.3244 21.3204 99.5717 21.8925C99.8646 22.5724 100.009 23.3088 99.9939 24.0507C99.9939 25.838 99.2482 27.2772 97.7568 28.3683C96.2654 29.4594 94.3579 30.0054 92.0344 30.0062C89.4897 30.0062 87.4353 29.4292 85.8713 28.2752C84.3073 27.1212 83.5045 25.5247 83.4629 23.4857H87.3448Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_6955_669">
+                        <rect width="100" height="30" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav class="header__navigation-main">
+                    <!-- wp_nav_menu() - primary-menu -->
+                    <div class="menu-primary-menu-container">
+                        <ul class="menu primary-menu" id="primary-menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Resources</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item--blog">
+                                        <a href="./blog.html">
+                                            <b>Blog</b>
+                                            <span>
+                                                The latest industry news, updates and info.
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contacts.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <nav class="header__navigation-secondary">
+                    <a href="" class="btn btn--transparent header__navigation-btn">Login</a>
+                </nav>
+            </div>
+            <button type="button" class="header__navigation-btn-menu" data-toggle=".header__navigation" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+
+
+        </div>
+    </div>
+</header>
+</div>
+
+<main>
+	<section class="intro">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-lg-6 col-xxl-5" data-aos="fade-up">
+                <h1 class="intro__title">
+                    Blog
+                </h1>
+                <h6 class="intro__subtitle">
+                    News, Articles, and Reports
+                </h6>
+                <form action="" class="subscribe-form">
+    <div class="row">
+        <div class="col-sm-8">
+            <input type="email" placeholder="Enter your email" required class="input subscribe-form__input">
+        </div>
+        <div class="col-sm-4">
+            <button type="submit" class="btn btn--primary subscribe-form__btn">Subscribe</button>
+        </div>
+    </div>
+    
+    
+</form>
+            </div>
+        </div>
+    </div>
+</section>
+	<div class="blog-list block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-1.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-2.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            Leading Condo Developer Uses Deal Management Technology to Accelerate Investments
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-3.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            Origin Product Update
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-4.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-5.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-6.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-7.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-8.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-9.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-10.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-11.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-12.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-13.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-14.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-15.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-16.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-17.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-18.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="pagination__pages">
+                <a href="./article.html" class="pagination-nav prev">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8327 10.0001H4.16602M4.16602 10.0001L9.99935 15.8334M4.16602 10.0001L9.99935 4.16675" stroke="#6D6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    Previous
+                </a>
+                <nav class="pagination-links">
+                    
+                    <a href="./article.html" class="pagination-link current">1</a>
+                    <a href="./article.html" class="pagination-link">2</a>
+                    <a href="./article.html" class="pagination-link">3</a>
+                    <span class="pagination-link pagination-link--dots">...</span>
+                    <a href="./article.html" class="pagination-link">20</a>
+                    
+                </nav>
+                <a href="./article.html" class="pagination-nav next">
+                    Next
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.16699 10.0001H15.8337M15.8337 10.0001L10.0003 4.16675M15.8337 10.0001L10.0003 15.8334" stroke="#6D6E73" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="join">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="join__subtitle">
+                            What are you waiting for?
+                        </p>
+                        <h4 class="join__title">
+                            Join the waitlist today
+                        </h4>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn--blue join__btn">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="./index.html" class="logo">
+                        <svg width="100" height="31" viewBox="0 0 100 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7017_646)">
+                            <path d="M21.4238 10.0382V30.769H14.2523L4.35549 14.8988V30.769H0V9.99073L4.10583 6.1515L17.0683 26.9375V12.0861L7.4113 3.06163L10.6874 0L21.4238 10.0382Z" fill="#2E70EF"/>
+                            <path d="M24.8047 22.0384V11.0776H28.7661V21.5765C28.7661 25.4491 30.2212 27.385 33.1314 27.3841C34.6473 27.3841 35.8331 26.8135 36.689 25.6724C37.5448 24.5312 37.9731 22.9486 37.9739 20.9247V11.0776H41.9342V30.7691H38.0094V28.2695C36.5915 30.0899 34.6599 31.0001 32.2148 31.0001C30.0119 31.0001 28.2268 30.2948 26.8594 28.8841C25.4921 27.4735 24.8071 25.1916 24.8047 22.0384Z" fill="white"/>
+                            <path d="M43.5859 11.0776H47.8411L53.0128 26.305L58.1112 11.0776H62.2917L55.3601 30.7691H50.5187L43.5859 11.0776Z" fill="white"/>
+                            <path d="M62.4023 20.9234C62.4023 17.9233 63.2827 15.4939 65.0433 13.635C66.8039 11.7761 69.1145 10.8467 71.9749 10.8467C74.8361 10.8467 77.147 11.7761 78.9077 13.635C80.6683 15.4939 81.5486 17.9233 81.5486 20.9234C81.5486 23.9491 80.6683 26.385 78.9077 28.231C77.147 30.0771 74.8361 31.0001 71.9749 31.0001C69.1153 31.0001 66.8047 30.0771 65.0433 28.231C63.2818 26.385 62.4015 23.9491 62.4023 20.9234ZM67.9767 25.6352C68.9786 26.8516 70.3113 27.4598 71.9749 27.4598C73.6384 27.4598 74.9793 26.8516 75.9975 25.6352C77.0116 24.417 77.5191 22.8464 77.5199 20.9234C77.5207 19.0003 77.0132 17.4297 75.9975 16.2116C74.9826 14.9934 73.6437 14.3844 71.981 14.3844C70.3183 14.3844 68.9855 14.9934 67.9829 16.2116C66.9802 17.4297 66.4788 19.0003 66.4788 20.9234C66.4788 22.8464 66.9781 24.417 67.9767 25.6352Z" fill="white"/>
+                            <path d="M87.3448 24.2684C87.3726 24.7719 87.5092 25.2621 87.7443 25.7021C87.9795 26.142 88.3069 26.5201 88.702 26.8078C89.5333 27.4485 90.6462 27.7689 92.0405 27.7689C93.2643 27.7689 94.2486 27.5379 94.9935 27.076C95.7384 26.614 96.1112 25.9861 96.112 25.1923C96.1268 24.7721 96.0383 24.355 95.855 23.981C95.6837 23.6602 95.3721 23.41 94.9201 23.2303C94.5096 23.0642 94.0862 22.9354 93.6547 22.8454C93.263 22.7692 92.6393 22.6799 91.7835 22.5772C91.6869 22.5548 91.5886 22.5419 91.4898 22.5387C90.4658 22.4204 89.4492 22.2405 88.445 21.9998C87.6327 21.7944 86.8452 21.4931 86.0977 21.1016C85.386 20.7482 84.7921 20.1786 84.393 19.4668C84.0136 18.7739 83.8239 17.9407 83.8239 16.9672C83.8239 15.1203 84.539 13.6331 85.9692 12.5056C87.3994 11.3782 89.2519 10.8268 91.5265 10.8516C93.8737 10.8516 95.7873 11.403 97.2673 12.5056C98.7473 13.6083 99.548 15.1481 99.6696 17.125H95.7816C95.7266 16.6745 95.5803 16.2414 95.3526 15.855C95.1248 15.4686 94.8209 15.1377 94.4611 14.8846C93.7024 14.3209 92.7486 14.039 91.5999 14.039C90.4267 14.039 89.4852 14.2696 88.7754 14.7306C88.0656 15.1917 87.7111 15.82 87.7119 16.6156C87.7031 16.8841 87.7447 17.1518 87.8343 17.4035C87.9322 17.6371 88.0908 17.8372 88.292 17.9809C88.4938 18.1361 88.7089 18.2714 88.9345 18.3851C89.2345 18.5155 89.5491 18.6056 89.8707 18.6533C90.2855 18.7316 90.6404 18.7816 90.9342 18.8265L92.2179 18.9997C93.197 19.1298 94.0222 19.2645 94.6937 19.4039C95.4052 19.5572 96.1042 19.7691 96.7839 20.0378C97.4133 20.2674 97.9976 20.6153 98.5082 21.0643C98.9622 21.5004 99.3244 22.0309 99.5717 22.6221C99.8646 23.3247 100.009 24.0856 99.9939 24.8523C99.9939 26.6992 99.2482 28.1863 97.7568 29.3138C96.2654 30.4413 94.3579 31.0055 92.0344 31.0063C89.4897 31.0063 87.4353 30.4101 85.8713 29.2176C84.3073 28.0251 83.5045 26.3754 83.4629 24.2684H87.3448Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7017_646">
+                            <rect width="100" height="31" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                            
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="contacts">
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Grant Uberstine
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                grant@nuvoscre.com
+                            </a>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Jeremy Serapio
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                jeremy@nuvoscre.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

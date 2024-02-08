@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Home</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+<div class="header-fill">
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="./index.html">
+                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6955_669)">
+                        <path d="M21.4238 9.71439V29.7765H14.2523L4.35549 14.4182V29.7765H0V9.66845L4.10583 5.95306L17.0683 26.0686V11.6963L7.41131 2.96287L10.6874 0L21.4238 9.71439Z" fill="white"/>
+                        <path d="M24.8047 21.3275V10.7202H28.7661V20.8804C28.7661 24.6281 30.2212 26.5015 33.1314 26.5007C34.6473 26.5007 35.8331 25.9485 36.689 24.8442C37.5448 23.7398 37.9731 22.2083 37.9739 20.2496V10.7202H41.9342V29.7765H38.0094V27.3575C36.5915 29.1192 34.6599 30 32.2148 30C30.0119 30 28.2268 29.3175 26.8594 27.9523C25.4921 26.5872 24.8071 24.3789 24.8047 21.3275Z" fill="white"/>
+                        <path d="M43.5859 10.7202H47.8411L53.0128 25.4564L58.1112 10.7202H62.2917L55.3601 29.7765H50.5187L43.5859 10.7202Z" fill="white"/>
+                        <path d="M62.4023 20.2483C62.4023 17.3451 63.2827 14.994 65.0433 13.1951C66.8039 11.3962 69.1145 10.4967 71.9749 10.4967C74.8361 10.4967 77.147 11.3962 78.9077 13.1951C80.6683 14.994 81.5486 17.3451 81.5486 20.2483C81.5486 23.1764 80.6683 25.5337 78.9077 27.3202C77.147 29.1067 74.8361 30 71.9749 30C69.1153 30 66.8047 29.1067 65.0433 27.3202C63.2818 25.5337 62.4015 23.1764 62.4023 20.2483ZM67.9767 24.8081C68.9786 25.9853 70.3113 26.5739 71.9749 26.5739C73.6384 26.5739 74.9793 25.9853 75.9975 24.8081C77.0116 23.6293 77.5191 22.1094 77.5199 20.2483C77.5207 18.3873 77.0132 16.8674 75.9975 15.6886C74.9826 14.5097 73.6437 13.9203 71.981 13.9203C70.3183 13.9203 68.9855 14.5097 67.9829 15.6886C66.9802 16.8674 66.4788 18.3873 66.4788 20.2483C66.4788 22.1094 66.9781 23.6293 67.9767 24.8081Z" fill="white"/>
+                        <path d="M87.3448 23.4857C87.3726 23.9729 87.5092 24.4473 87.7443 24.8731C87.9795 25.2988 88.3069 25.6647 88.702 25.9431C89.5333 26.5632 90.6462 26.8732 92.0405 26.8732C93.2643 26.8732 94.2486 26.6497 94.9935 26.2027C95.7384 25.7556 96.1112 25.148 96.112 24.3797C96.1268 23.9731 96.0383 23.5694 95.855 23.2075C95.6837 22.8971 95.3721 22.6549 94.9201 22.4811C94.5096 22.3203 94.0862 22.1956 93.6547 22.1085C93.263 22.0349 92.6393 21.9484 91.7835 21.849C91.6869 21.8273 91.5886 21.8148 91.4898 21.8118C90.4658 21.6973 89.4492 21.5232 88.445 21.2902C87.6327 21.0915 86.8452 20.7998 86.0977 20.421C85.386 20.079 84.7921 19.5278 84.393 18.839C84.0136 18.1684 83.8239 17.3621 83.8239 16.42C83.8239 14.6327 84.539 13.1934 85.9692 12.1023C87.3994 11.0112 89.2519 10.4777 91.5265 10.5017C93.8737 10.5017 95.7873 11.0352 97.2673 12.1023C98.7473 13.1694 99.548 14.6596 99.6696 16.5727H95.7816C95.7266 16.1367 95.5803 15.7176 95.3526 15.3437C95.1248 14.9697 94.8209 14.6495 94.4611 14.4046C93.7024 13.859 92.7486 13.5863 91.5999 13.5863C90.4267 13.5863 89.4852 13.8094 88.7754 14.2556C88.0656 14.7018 87.7111 15.3098 87.7119 16.0797C87.7031 16.3396 87.7447 16.5986 87.8343 16.8422C87.9322 17.0683 88.0908 17.2619 88.292 17.401C88.4938 17.5512 88.7089 17.6822 88.9345 17.7921C89.2345 17.9183 89.5491 18.0055 89.8707 18.0517C90.2855 18.1274 90.6404 18.1758 90.9342 18.2193L92.2179 18.387C93.197 18.5128 94.0222 18.6432 94.6937 18.7781C95.4052 18.9264 96.1042 19.1315 96.7839 19.3915C97.4133 19.6137 97.9976 19.9504 98.5082 20.385C98.9622 20.8069 99.3244 21.3204 99.5717 21.8925C99.8646 22.5724 100.009 23.3088 99.9939 24.0507C99.9939 25.838 99.2482 27.2772 97.7568 28.3683C96.2654 29.4594 94.3579 30.0054 92.0344 30.0062C89.4897 30.0062 87.4353 29.4292 85.8713 28.2752C84.3073 27.1212 83.5045 25.5247 83.4629 23.4857H87.3448Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_6955_669">
+                        <rect width="100" height="30" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                        
+                </a>
+            </div>
+            <div class="header__navigation">
+                <nav class="header__navigation-main">
+                    <!-- wp_nav_menu() - primary-menu -->
+                    <div class="menu-primary-menu-container">
+                        <ul class="menu primary-menu" id="primary-menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Resources</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item--blog">
+                                        <a href="./blog.html">
+                                            <b>Blog</b>
+                                            <span>
+                                                The latest industry news, updates and info.
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contacts.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <nav class="header__navigation-secondary">
+                    <a href="" class="btn btn--transparent header__navigation-btn">Login</a>
+                </nav>
+            </div>
+            <button type="button" class="header__navigation-btn-menu" data-toggle=".header__navigation" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+
+
+        </div>
+    </div>
+</header>
+</div>
+
+<main>
+    <article class="article block">
+    <div class="container">
+        <div class="article__inner">
+            <div class="article__header">
+                <div class="article__breadcrumbs">
+                    <ul class="breadcrumbs">
+    <li>
+        <a href="">
+            Blog</a>
+    </li>
+    <li>
+        <a href="">
+            How to Run Better Pipeline Meetings with Less Effort
+        </a>
+    </li>
+</ul>
+                </div>
+                <h2 class="article__title">
+                    How to Run Better Pipeline Meetings with Less Effort
+                </h2>
+                <p class="article__subtitle">
+                    The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                </p>
+                <div class="article__thumbnail">
+                    <img src="./images/dist/article-img.jpg" alt="">
+                </div>
+                <div class="article__meta">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            <p>
+                                Published on
+                            </p>
+                            <div class="article__date">
+                                04.02.2024
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <nav class="social">
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25484)">
+            <path d="M4.16602 12.5H3.33268C2.89065 12.5 2.46673 12.3244 2.15417 12.0119C1.84161 11.6993 1.66602 11.2754 1.66602 10.8334V3.33335C1.66602 2.89133 1.84161 2.4674 2.15417 2.15484C2.46673 1.84228 2.89065 1.66669 3.33268 1.66669H10.8327C11.2747 1.66669 11.6986 1.84228 12.0112 2.15484C12.3238 2.4674 12.4993 2.89133 12.4993 3.33335V4.16669M9.16602 7.50002H16.666C17.5865 7.50002 18.3327 8.24621 18.3327 9.16669V16.6667C18.3327 17.5872 17.5865 18.3334 16.666 18.3334H9.16602C8.24554 18.3334 7.49935 17.5872 7.49935 16.6667V9.16669C7.49935 8.24621 8.24554 7.50002 9.16602 7.50002Z" stroke="#6D6E73" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25484">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            <span>Copy link</span>
+    </a>
+    <a href="">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.2918 17.125C13.8371 17.125 17.9652 10.8723 17.9652 5.45161C17.9652 5.27583 17.9613 5.09614 17.9535 4.92036C18.7566 4.33961 19.4496 3.62027 20 2.79614C19.2521 3.12889 18.458 3.34621 17.6449 3.44067C18.5011 2.92748 19.1421 2.12129 19.4492 1.17153C18.6438 1.64886 17.763 1.98557 16.8445 2.16724C16.2257 1.5097 15.4075 1.07432 14.5164 0.928437C13.6253 0.782549 12.711 0.93427 11.9148 1.36014C11.1186 1.78601 10.4848 2.46232 10.1115 3.28449C9.73825 4.10666 9.64619 5.02891 9.84961 5.90864C8.21874 5.8268 6.62328 5.40315 5.16665 4.66514C3.71002 3.92714 2.42474 2.89126 1.39414 1.62466C0.870333 2.52776 0.710047 3.59643 0.945859 4.61347C1.18167 5.63051 1.79589 6.5196 2.66367 7.10005C2.01219 7.07937 1.37498 6.90396 0.804688 6.58833V6.63911C0.804104 7.58685 1.13175 8.50555 1.73192 9.23904C2.3321 9.97252 3.16777 10.4755 4.09687 10.6625C3.49338 10.8277 2.85999 10.8517 2.2457 10.7329C2.50788 11.5479 3.01798 12.2608 3.70481 12.772C4.39164 13.2832 5.22093 13.5672 6.07695 13.5844C4.62369 14.726 2.82848 15.3452 0.980469 15.3422C0.652739 15.3417 0.325333 15.3216 0 15.2821C1.87738 16.4865 4.06128 17.1262 6.2918 17.125Z" fill="#6D6E73"/>
+            </svg>
+            
+    </a>
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25493)">
+            <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="#6D6E73"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25493">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+    </a>
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25497)">
+            <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z" fill="#6D6E73"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25497">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+    </a>
+</nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="article__content">
+                <h6>
+                    Sed ut perspiciatis unde omnis iste natus
+                </h6>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                </p>
+                <p>
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <img src="./images/dist/article-content-img-1.jpg" alt="">
+                <p>
+                    <small>
+                        <a href="" target="_blank">Image courtesy of Laura Davidson via Unsplash</a>
+                    </small>
+                </p>
+                <blockquote>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <cite>
+                        —  Laura Davidson, Product Designer
+                    </cite>
+                </blockquote>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                </p>
+                <p>
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                </p>
+                <p>
+                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </p>
+                <h6>
+                    Sed ut perspiciatis unde
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <h6>
+                    Sed ut perspiciatis
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <ol>
+                    <li>But I must explain to you how all this mistaken idea.</li>
+                    <li>To take a trivial example, which of us ever undertakes laborious physical exercise.</li>
+                    <li>But who has any right to find fault with a man who chooses.</li>
+                </ol>
+                <img src="./images/dist/article-content-img-2.jpg" alt="">
+                <p>
+                    <small>
+                        <a href="" target="_blank">Image courtesy of Leon via Unsplash</a>
+                    </small>
+                </p>
+                <p>
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+                </p>
+                <p>
+                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                </p>
+            </div>
+            <div class="article__footer">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+
+                    </div>
+                    <div class="col-auto">
+                        <nav class="social">
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25484)">
+            <path d="M4.16602 12.5H3.33268C2.89065 12.5 2.46673 12.3244 2.15417 12.0119C1.84161 11.6993 1.66602 11.2754 1.66602 10.8334V3.33335C1.66602 2.89133 1.84161 2.4674 2.15417 2.15484C2.46673 1.84228 2.89065 1.66669 3.33268 1.66669H10.8327C11.2747 1.66669 11.6986 1.84228 12.0112 2.15484C12.3238 2.4674 12.4993 2.89133 12.4993 3.33335V4.16669M9.16602 7.50002H16.666C17.5865 7.50002 18.3327 8.24621 18.3327 9.16669V16.6667C18.3327 17.5872 17.5865 18.3334 16.666 18.3334H9.16602C8.24554 18.3334 7.49935 17.5872 7.49935 16.6667V9.16669C7.49935 8.24621 8.24554 7.50002 9.16602 7.50002Z" stroke="#6D6E73" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25484">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            <span>Copy link</span>
+    </a>
+    <a href="">
+        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.2918 17.125C13.8371 17.125 17.9652 10.8723 17.9652 5.45161C17.9652 5.27583 17.9613 5.09614 17.9535 4.92036C18.7566 4.33961 19.4496 3.62027 20 2.79614C19.2521 3.12889 18.458 3.34621 17.6449 3.44067C18.5011 2.92748 19.1421 2.12129 19.4492 1.17153C18.6438 1.64886 17.763 1.98557 16.8445 2.16724C16.2257 1.5097 15.4075 1.07432 14.5164 0.928437C13.6253 0.782549 12.711 0.93427 11.9148 1.36014C11.1186 1.78601 10.4848 2.46232 10.1115 3.28449C9.73825 4.10666 9.64619 5.02891 9.84961 5.90864C8.21874 5.8268 6.62328 5.40315 5.16665 4.66514C3.71002 3.92714 2.42474 2.89126 1.39414 1.62466C0.870333 2.52776 0.710047 3.59643 0.945859 4.61347C1.18167 5.63051 1.79589 6.5196 2.66367 7.10005C2.01219 7.07937 1.37498 6.90396 0.804688 6.58833V6.63911C0.804104 7.58685 1.13175 8.50555 1.73192 9.23904C2.3321 9.97252 3.16777 10.4755 4.09687 10.6625C3.49338 10.8277 2.85999 10.8517 2.2457 10.7329C2.50788 11.5479 3.01798 12.2608 3.70481 12.772C4.39164 13.2832 5.22093 13.5672 6.07695 13.5844C4.62369 14.726 2.82848 15.3452 0.980469 15.3422C0.652739 15.3417 0.325333 15.3216 0 15.2821C1.87738 16.4865 4.06128 17.1262 6.2918 17.125Z" fill="#6D6E73"/>
+            </svg>
+            
+    </a>
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25493)">
+            <path d="M20 10C20 4.47715 15.5229 0 10 0C4.47715 0 0 4.47715 0 10C0 14.9912 3.65684 19.1283 8.4375 19.8785V12.8906H5.89844V10H8.4375V7.79688C8.4375 5.29063 9.93047 3.90625 12.2146 3.90625C13.3084 3.90625 14.4531 4.10156 14.4531 4.10156V6.5625H13.1922C11.95 6.5625 11.5625 7.3334 11.5625 8.125V10H14.3359L13.8926 12.8906H11.5625V19.8785C16.3432 19.1283 20 14.9912 20 10Z" fill="#6D6E73"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25493">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+    </a>
+    <a href="">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_7173_25497)">
+            <path d="M18.5195 0H1.47656C0.660156 0 0 0.644531 0 1.44141V18.5547C0 19.3516 0.660156 20 1.47656 20H18.5195C19.3359 20 20 19.3516 20 18.5586V1.44141C20 0.644531 19.3359 0 18.5195 0ZM5.93359 17.043H2.96484V7.49609H5.93359V17.043ZM4.44922 6.19531C3.49609 6.19531 2.72656 5.42578 2.72656 4.47656C2.72656 3.52734 3.49609 2.75781 4.44922 2.75781C5.39844 2.75781 6.16797 3.52734 6.16797 4.47656C6.16797 5.42188 5.39844 6.19531 4.44922 6.19531ZM17.043 17.043H14.0781V12.4023C14.0781 11.2969 14.0586 9.87109 12.5352 9.87109C10.9922 9.87109 10.7578 11.0781 10.7578 12.3242V17.043H7.79688V7.49609H10.6406V8.80078H10.6797C11.0742 8.05078 12.043 7.25781 13.4844 7.25781C16.4883 7.25781 17.043 9.23438 17.043 11.8047V17.043Z" fill="#6D6E73"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_7173_25497">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+    </a>
+</nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+    <section class="similar block">
+    <div class="container">
+        <h2 class="similar__title">
+            Similar articles
+        </h2>
+    
+        <div class="swiper similar-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide similar-slide">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-7.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="swiper-slide similar-slide">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-8.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+              </div>
+              <div class="swiper-slide similar-slide">
+                <a href="./article.html" class="blog-cart">
+                    <div class="blog-cart__img">
+                        <img src="./images/dist/blog-img-9.jpg" alt="">
+                    </div>
+                    <div class="blog-cart__inner">
+                        <h6 class="blog-cart__title">
+                            How to Run Better Pipeline Meetings with Less Effort
+                        </h6>
+                        <p class="blog-cart__text">
+                            The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.
+                        </p>
+                        <div class="blog-cart__date">
+                            04.02.2024
+                        </div>
+                    </div>
+                </a>
+              </div>
+    
+            </div>
+          </div>
+    </div>
+
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="join">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-auto">
+                        <p class="join__subtitle">
+                            What are you waiting for?
+                        </p>
+                        <h4 class="join__title">
+                            Join the waitlist today
+                        </h4>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn--blue join__btn">
+                            Join Waitlist
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-auto">
+                    <a href="./index.html" class="logo">
+                        <svg width="100" height="31" viewBox="0 0 100 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_7017_646)">
+                            <path d="M21.4238 10.0382V30.769H14.2523L4.35549 14.8988V30.769H0V9.99073L4.10583 6.1515L17.0683 26.9375V12.0861L7.4113 3.06163L10.6874 0L21.4238 10.0382Z" fill="#2E70EF"/>
+                            <path d="M24.8047 22.0384V11.0776H28.7661V21.5765C28.7661 25.4491 30.2212 27.385 33.1314 27.3841C34.6473 27.3841 35.8331 26.8135 36.689 25.6724C37.5448 24.5312 37.9731 22.9486 37.9739 20.9247V11.0776H41.9342V30.7691H38.0094V28.2695C36.5915 30.0899 34.6599 31.0001 32.2148 31.0001C30.0119 31.0001 28.2268 30.2948 26.8594 28.8841C25.4921 27.4735 24.8071 25.1916 24.8047 22.0384Z" fill="white"/>
+                            <path d="M43.5859 11.0776H47.8411L53.0128 26.305L58.1112 11.0776H62.2917L55.3601 30.7691H50.5187L43.5859 11.0776Z" fill="white"/>
+                            <path d="M62.4023 20.9234C62.4023 17.9233 63.2827 15.4939 65.0433 13.635C66.8039 11.7761 69.1145 10.8467 71.9749 10.8467C74.8361 10.8467 77.147 11.7761 78.9077 13.635C80.6683 15.4939 81.5486 17.9233 81.5486 20.9234C81.5486 23.9491 80.6683 26.385 78.9077 28.231C77.147 30.0771 74.8361 31.0001 71.9749 31.0001C69.1153 31.0001 66.8047 30.0771 65.0433 28.231C63.2818 26.385 62.4015 23.9491 62.4023 20.9234ZM67.9767 25.6352C68.9786 26.8516 70.3113 27.4598 71.9749 27.4598C73.6384 27.4598 74.9793 26.8516 75.9975 25.6352C77.0116 24.417 77.5191 22.8464 77.5199 20.9234C77.5207 19.0003 77.0132 17.4297 75.9975 16.2116C74.9826 14.9934 73.6437 14.3844 71.981 14.3844C70.3183 14.3844 68.9855 14.9934 67.9829 16.2116C66.9802 17.4297 66.4788 19.0003 66.4788 20.9234C66.4788 22.8464 66.9781 24.417 67.9767 25.6352Z" fill="white"/>
+                            <path d="M87.3448 24.2684C87.3726 24.7719 87.5092 25.2621 87.7443 25.7021C87.9795 26.142 88.3069 26.5201 88.702 26.8078C89.5333 27.4485 90.6462 27.7689 92.0405 27.7689C93.2643 27.7689 94.2486 27.5379 94.9935 27.076C95.7384 26.614 96.1112 25.9861 96.112 25.1923C96.1268 24.7721 96.0383 24.355 95.855 23.981C95.6837 23.6602 95.3721 23.41 94.9201 23.2303C94.5096 23.0642 94.0862 22.9354 93.6547 22.8454C93.263 22.7692 92.6393 22.6799 91.7835 22.5772C91.6869 22.5548 91.5886 22.5419 91.4898 22.5387C90.4658 22.4204 89.4492 22.2405 88.445 21.9998C87.6327 21.7944 86.8452 21.4931 86.0977 21.1016C85.386 20.7482 84.7921 20.1786 84.393 19.4668C84.0136 18.7739 83.8239 17.9407 83.8239 16.9672C83.8239 15.1203 84.539 13.6331 85.9692 12.5056C87.3994 11.3782 89.2519 10.8268 91.5265 10.8516C93.8737 10.8516 95.7873 11.403 97.2673 12.5056C98.7473 13.6083 99.548 15.1481 99.6696 17.125H95.7816C95.7266 16.6745 95.5803 16.2414 95.3526 15.855C95.1248 15.4686 94.8209 15.1377 94.4611 14.8846C93.7024 14.3209 92.7486 14.039 91.5999 14.039C90.4267 14.039 89.4852 14.2696 88.7754 14.7306C88.0656 15.1917 87.7111 15.82 87.7119 16.6156C87.7031 16.8841 87.7447 17.1518 87.8343 17.4035C87.9322 17.6371 88.0908 17.8372 88.292 17.9809C88.4938 18.1361 88.7089 18.2714 88.9345 18.3851C89.2345 18.5155 89.5491 18.6056 89.8707 18.6533C90.2855 18.7316 90.6404 18.7816 90.9342 18.8265L92.2179 18.9997C93.197 19.1298 94.0222 19.2645 94.6937 19.4039C95.4052 19.5572 96.1042 19.7691 96.7839 20.0378C97.4133 20.2674 97.9976 20.6153 98.5082 21.0643C98.9622 21.5004 99.3244 22.0309 99.5717 22.6221C99.8646 23.3247 100.009 24.0856 99.9939 24.8523C99.9939 26.6992 99.2482 28.1863 97.7568 29.3138C96.2654 30.4413 94.3579 31.0055 92.0344 31.0063C89.4897 31.0063 87.4353 30.4101 85.8713 29.2176C84.3073 28.0251 83.5045 26.3754 83.4629 24.2684H87.3448Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_7017_646">
+                            <rect width="100" height="31" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                            
+                            
+                    </a>
+                </div>
+                <div class="col-auto">
+                    <div class="contacts">
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Grant Uberstine
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                grant@nuvoscre.com
+                            </a>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__item-title">
+                                Jeremy Serapio
+                            </div>
+                            <a href="mailto:grant@nuvoscre.com" class="contacts__item-link">
+                                jeremy@nuvoscre.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>

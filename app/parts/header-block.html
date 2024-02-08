@@ -1,8 +1,8 @@
 <header class="header">
     <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-auto">
-                <a href="./index.html" class="logo">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="./index.html">
                     <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_6955_669)">
                         <path d="M21.4238 9.71439V29.7765H14.2523L4.35549 14.4182V29.7765H0V9.66845L4.10583 5.95306L17.0683 26.0686V11.6963L7.41131 2.96287L10.6874 0L21.4238 9.71439Z" fill="white"/>
@@ -20,11 +20,42 @@
                         
                 </a>
             </div>
-            <div class="col-auto">
-                <a href="./contacts.html" class="btn btn--transparent">
-                    Contact Us
-                </a>
+            <div class="header__navigation">
+                <nav class="header__navigation-main">
+                    <!-- wp_nav_menu() - primary-menu -->
+                    <div class="menu-primary-menu-container">
+                        <ul class="menu primary-menu" id="primary-menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Resources</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item--blog">
+                                        <a href="./blog.html">
+                                            <b>Blog</b>
+                                            <span>
+                                                The latest industry news, updates and info.
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contacts.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <nav class="header__navigation-secondary">
+                    <a href="" class="btn btn--transparent header__navigation-btn">Login</a>
+                </nav>
             </div>
+            <button type="button" class="header__navigation-btn-menu" data-toggle=".header__navigation" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+
+
         </div>
     </div>
 </header>

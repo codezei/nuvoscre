@@ -9,7 +9,7 @@
         font-weight: 400;
         margin-bottom: 20px;
     }
-    &__light {
+    .container {
         position: relative;
         z-index: 1;
         &:before {
@@ -42,7 +42,6 @@
             z-index: -1;
             pointer-events: none;
         }
-
     }
     &__img {
         margin-top: 35px;
@@ -51,39 +50,8 @@
         }
     }
 
-    // @media screen and (max-width: 991px) {
-    //     &__form {
-    //         &:before {
-    //             content: "";
-    //             display: block;
-    //             width: 241px;
-    //             height: 219px;
-    //             border-radius: 100px;
-    //             background: #FBFDFF;
-    //             filter: blur(100px);
-    //             position: absolute;
-    //             right: 0;
-    //             top: 0;
-    //             transform: translate(50%, -50%);
-    //             z-index: -1;
-    //             pointer-events: none;
-    //         }
-    //         &:after {
-    //             content: "";
-    //             display: block;
-    //             width: 241px;
-    //             height: 219px;
-    //             border-radius: 100px;
-    //             background: #FBFDFF;
-    //             filter: blur(100px);
-    //             position: absolute;
-    //             left: 0;
-    //             bottom: 0;
-    //             transform: translate(-50%, 50%);
-    //             z-index: -1;
-    //             pointer-events: none;
-    //         }
-    //     }
-    // }
+    @media screen and (max-width: 575px) {
+        padding: 140px 0 64px;
+    }
 
 }

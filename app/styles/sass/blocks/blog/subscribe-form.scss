@@ -1,0 +1,27 @@
+.subscribe-form {
+    max-width: 500px;
+    .row>* {
+        margin-top: 16px;
+        padding: 0 8px;
+    }
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    
+    @supports (gap: 20px) {
+        .row {
+            gap: 16px 0;
+        }
+    
+        .row>* {
+            margin-top: 0;
+        }
+    }
+    &__input {
+        width: 100%;
+    }
+    &__btn {
+        width: 100%;
+    }
+}

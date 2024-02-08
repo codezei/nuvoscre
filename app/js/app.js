@@ -1,6 +1,6 @@
 // // Import vendor jQuery plugin example
-// import '~/app/libs/mmenu/dist/mmenu.js'
 import AOS from "aos"
+import Swiper from 'swiper';
 
 document.addEventListener('DOMContentLoaded', () => {
 	AOS.init({
@@ -10,6 +10,27 @@ document.addEventListener('DOMContentLoaded', () => {
 	tabs('.services')
 	tabs('.information')
 	toggleFaq()
+	mobMenuToggle()
+	stickyHeader()
+	similarSwiper()
+
+	function similarSwiper () {
+		var swiper = new Swiper(".similar-swiper", {
+			slidesPerView: 1,
+			spaceBetween: 24,
+			breakpoints: {
+				1199: {
+					slidesPerView: 3
+				},
+				991: {
+					slidesPerView: 2
+				},
+				575: {
+					slidesPerView: 1
+				},
+			}
+		});
+	}
 
 
 	function tabs(sectionClass) {
@@ -52,5 +73,34 @@ document.addEventListener('DOMContentLoaded', () => {
 				}
 			})
 		}
+	}
+
+	function mobMenuToggle() {
+		let btn = document.querySelector('.header__navigation-btn-menu')
+		let menu = document.querySelector(btn.dataset.toggle)
+		let header = document.querySelector('.header')
+		btn.addEventListener('click', function (e) {
+			btn.classList.toggle('active')
+			menu.classList.toggle('active')
+			header.classList.toggle('active')
+		})
+	}
+	function stickyHeader() {
+		let header = document.querySelector('.header')
+	
+		if (document.body.getBoundingClientRect().top < 0) {
+			header.classList.add('sticky')
+		} else {
+			header.classList.remove('sticky')
+		}
+	
+		document.addEventListener('scroll', function () {
+			if (document.body.getBoundingClientRect().top < 0) {
+				header.classList.add('sticky')
+			} else {
+				header.classList.remove('sticky')
+			}
+	
+		})
 	}
 })

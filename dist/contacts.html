@@ -18,11 +18,12 @@
 </head>
 
 <body>
-<header class="header">
+<div class="header-transparent">
+	<header class="header">
     <div class="container">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-auto">
-                <a href="./index.html" class="logo">
+        <div class="header__inner">
+            <div class="logo header__logo">
+                <a href="./index.html">
                     <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_6955_669)">
                         <path d="M21.4238 9.71439V29.7765H14.2523L4.35549 14.4182V29.7765H0V9.66845L4.10583 5.95306L17.0683 26.0686V11.6963L7.41131 2.96287L10.6874 0L21.4238 9.71439Z" fill="white"/>
@@ -40,14 +41,46 @@
                         
                 </a>
             </div>
-            <div class="col-auto">
-                <a href="./contacts.html" class="btn btn--transparent">
-                    Contact Us
-                </a>
+            <div class="header__navigation">
+                <nav class="header__navigation-main">
+                    <!-- wp_nav_menu() - primary-menu -->
+                    <div class="menu-primary-menu-container">
+                        <ul class="menu primary-menu" id="primary-menu">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Resources</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item menu-item--blog">
+                                        <a href="./blog.html">
+                                            <b>Blog</b>
+                                            <span>
+                                                The latest industry news, updates and info.
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./contacts.html">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+                <nav class="header__navigation-secondary">
+                    <a href="" class="btn btn--transparent header__navigation-btn">Login</a>
+                </nav>
             </div>
+            <button type="button" class="header__navigation-btn-menu" data-toggle=".header__navigation" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+
+
         </div>
     </div>
 </header>
+</div>
 
 <main>
 	<section class="intro">
@@ -65,37 +98,37 @@
                 </div>
             </div>
             <div class="col-lg-6 intro__light" data-aos="fade-left" data-aos-delay="400">
-                <form action="" class="form">
-    <div class="form__row row">
+                <form action="" class="contact-form">
+    <div class="contact-form__row row">
         <div class="col-sm-6">
             <label for="first-name">
                 First Name
             </label>
-            <input type="text" name="first-name" class="input form__input" id="first-name">
+            <input type="text" name="first-name" class="input contact-form__input" id="first-name">
         </div>
         <div class="col-sm-6">
             <label for="last-name">
                 Last Name
             </label>
-            <input type="text" name="last-name" class="input form__input" id="last-name">
+            <input type="text" name="last-name" class="input contact-form__input" id="last-name">
         </div>
         <div class="col-sm-6">
             <label for="email">
                 Email
             </label>
-            <input type="email" name="email" class="input form__input" id="email">
+            <input type="email" name="email" class="input contact-form__input" id="email">
         </div>
         <div class="col-sm-6">
             <label for="company-name">
                 Company Name
             </label>
-            <input type="text" name="company-name" class="input form__input" id="company-name">
+            <input type="text" name="company-name" class="input contact-form__input" id="company-name">
         </div>
         <div class="col-12">
             <label for="company-sixe">
                 Company Sixe
             </label>
-            <select name="company-sixe" id="company-sixe" class="input form__input">
+            <select name="company-sixe" id="company-sixe" class="input contact-form__input">
                 <option value="10" selected>Less than 10 Employees</option>
                 <option value="2">Less than 5 Employees</option>
             </select>
@@ -104,7 +137,7 @@
             <label for="reason">
                 Reason
             </label>
-            <select name="reason" id="reason" class="input form__input">
+            <select name="reason" id="reason" class="input contact-form__input">
                 <option value="General Inquiry" selected>General Inquiry</option>
                 <option value="General Inquiry">General Inquiry</option>
             </select>
@@ -114,10 +147,10 @@
             <label for="note">
                 Note
             </label>
-            <textarea name="note" id="note" rows="3" class="input form__input"></textarea>
+            <textarea name="note" id="note" rows="3" class="input contact-form__input"></textarea>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn--blue form__btn">Submit</button>
+            <button type="submit" class="btn btn--blue contact-form__btn">Submit</button>
         </div>
     </div>
 </form>

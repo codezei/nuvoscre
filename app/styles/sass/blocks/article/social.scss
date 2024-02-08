@@ -1,0 +1,27 @@
+.social {
+    a {
+        padding: 10px;
+        box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+        border-radius: 8px;
+        border: 1px solid #D0D5DD;
+        color: #6D6E73;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 6px;
+        line-height: 1;
+        transition: all 400ms;
+        &:hover {
+            background-color: #fff;
+        }
+        span {
+            color: #000;
+        }
+        svg {
+            vertical-align: middle;
+        }
+        svg + span {
+            margin-left: 8px;
+            display: inline-block;
+        }
+    }
+}
