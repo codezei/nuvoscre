@@ -59,10 +59,30 @@
         p {
             color: #000;
             font-size: 24px;
+            line-height: 1.3;
         }
         cite {
             color: #6D6E73;
             font-style: normal;
+        }
+    }
+    @media screen and (max-width: 1199px) {
+        margin-top: 78px;
+    }
+    @media screen and (max-width: 575px) {
+        margin-top: 62px;
+        &__breadcrumbs {
+            margin-bottom: 20px;
+        }
+        &__content {
+            margin: 20px 0;
+            padding: 20px 0;
+        }
+        &__thumbnail {
+            margin-bottom: 20px;
+        }
+        &__subtitle {
+            margin-bottom: 20px;
         }
     }
     @media screen and (min-width: 992px) {
@@ -71,5 +91,6 @@
             margin-left: auto;
             margin-right: auto;
         }
+
     }
 }
